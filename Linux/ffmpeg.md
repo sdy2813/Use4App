@@ -7,7 +7,10 @@ ffprobe -show_streams inputFile
 ## 视频转音频
 ```
 # 把MP4格式的文件转换成 128kbps的MP3格式
-ffmpeg -i input.MP4 -ab 128 output.mp3
+ffmpeg -i input.MP4 -ab 128k output.mp3
+
+# -codec的意思是直接复制流。
+ffmpeg -i input.mp4 -vn -codec copy out.m4a
 ```
 
 ## 更改视频文件的分辨率
