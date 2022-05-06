@@ -28,7 +28,7 @@ ffmpeg -i outputfile.flv -copyts -strict -2 test.mp4       #flv 转 mp4
 for i in *.wav;do ffmpeg -i "$i" -f mp3 "${i}.mp3";done
 ```
 
-##视频裁剪
+## 视频裁剪
 ```
 #这个例子是将test.mp4视频的前3秒，重新生成一个新视频。
 
