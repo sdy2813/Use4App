@@ -96,6 +96,25 @@ I am running this in a cloud/serverless environment, so minimizing runtime is ke
 
 The -vf loop option is what loops the one frame here. It keeps that frame in memory and is the main reason why this is faster than other answers, while being more compatible than a fractional framerate approach.
 ```
+
+```
+ffmpeg \
+-loop 1 -t 5 -i 空城计_01.png \
+-loop 1 -t 177 -i 空城计_02.png \
+-loop 1 -t 60 -i 空城计_03.png \
+-loop 1 -t 79 -i 空城计_04.png \
+-loop 1 -t 54 -i 空城计_05.png \
+-i 空城计.mp3 \
+-filter_complex \
+"[0:v]scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2,setsar=1,fade=t=out:st=4:d=1[v0]; \
+ [1:v]scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2,setsar=1,fade=t=in:st=0:d=1,fade=t=out:st=4:d=1[v1]; \
+ [2:v]scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2,setsar=1,fade=t=in:st=0:d=1,fade=t=out:st=4:d=1[v2]; \
+ [3:v]scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2,setsar=1,fade=t=in:st=0:d=1,fade=t=out:st=4:d=1[v3]; \
+ [4:v]scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2,setsar=1,fade=t=in:st=0:d=1,fade=t=out:st=4:d=1[v4]; \
+ [v0][v1][v2][v3][v4]concat=n=5:v=1:a=0,format=yuv420p[v]" -map "[v]" -map 5:a -shortest kcj_test.mp4
+
+```
+
 ---
 参考资料
 1. [给新手的 20 多个 FFmpeg 命令示例](https://zhuanlan.zhihu.com/p/67878761)
