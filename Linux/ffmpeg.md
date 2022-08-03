@@ -75,6 +75,27 @@ ffmpeg -i audio.mp3 -i video.avi video_audio_mix.mpg
 ffmpeg -r 25 -loop 1 -i 1.jpg -pix_fmt yuv420p -vcodec libx264 -b:v 600k -r:v 25 -preset medium -crf 30 -s 720x576 -vframes 250 -r 25 -t 180 a.mp4
 ```
 
+```
+ffmpeg -framerate 30 -i input.jpg -t 15 \
+    -c:v libx265 -x265-params lossless=1 \
+    -pix_fmt yuv420p -vf "scale=3840:2160,loop=-1:1" \
+    -movflags faststart \
+    out.mp4
+ 
+-framerate 30 rather than default 25 fps
+-t 15 video duration 15 seconds
+-c:v libx265 encode using h.265 (HEVC)
+-x265-params lossless=1 lossless encoding, prevent artifacts for a still image which will be displayed for long enough to notice them
+-pix_fmt yuv420p set pixel format for compatibility when input is an image (JPEGs are often YUV444, which many decoders will not accept)
+-vf "<options>" sets video filter
+scale=3840:2160 specifically scale to 3840x2160 (4K)
+You will want to use 3840:-1 or -1:2160 if your input is not exactly 16:9 (or whatever your target ratio is). This will prevent significant blurring due to an unintentional aspect ratio change. Look into pad instead, if you must have an exact resoluation that does not match the ratio of the input.
+loop=-1:1 infinitely loop (-1) for groups of 1 frame (1)
+movflags faststart will put metadata at front of file for faster playback in web browsers.
+I am running this in a cloud/serverless environment, so minimizing runtime is key. I tried the low framerate approach, but it did not play in my target environment or locally on VLC.
+
+The -vf loop option is what loops the one frame here. It keeps that frame in memory and is the main reason why this is faster than other answers, while being more compatible than a fractional framerate approach.
+```
 ---
 参考资料
 1. [给新手的 20 多个 FFmpeg 命令示例](https://zhuanlan.zhihu.com/p/67878761)
@@ -83,4 +104,4 @@ ffmpeg -r 25 -loop 1 -i 1.jpg -pix_fmt yuv420p -vcodec libx264 -b:v 600k -r:v 25
 
 1. [学习ffmpeg，整理资料编写技术手册](https://github.com/feixiao/ffmpeg)
 
-
+1. [Creating a video from a single image for a specific duration in ffmpeg](https://stackoverflow.com/questions/25891342/creating-a-video-from-a-single-image-for-a-specific-duration-in-ffmpeg)
