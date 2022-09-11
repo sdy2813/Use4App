@@ -1,0 +1,36 @@
+# Rime user dictionary
+#@/db_name	luna_pinyin.userdb
+#@/db_type	userdb
+#@/rime_version	1.5.3
+#@/tick	41
+#@/user_id	08739937-06a1-48ea-b483-a1d82a4c18b3
+biao shi 	表示	c=1 d=0.97531 t=41
+bu gao 	不高	c=2 d=1.80175 t=41
+ce xu 	測序	c=3 d=2.67966 t=41
+cun zai 	存在	c=1 d=0.831104 t=41
+de 	的	c=2 d=1.78921 t=41
+di fang 	地方	c=1 d=0.941765 t=41
+en en 	嗯嗯	c=1 d=0.965605 t=41
+fa xian 	發現	c=1 d=0.918512 t=41
+han liang 	含量	c=4 d=3.64752 t=41
+han yi 	含義	c=1 d=1 t=41
+ji yin zu 	基因組	c=2 d=1.81547 t=41
+jiao di 	較低	c=1 d=0.847894 t=41
+ma 	嗎	c=2 d=1.78733 t=41
+mei you 	沒有	c=1 d=0.985112 t=41
+pian di 	偏低	c=1 d=0.960789 t=41
+qing kuang 	情況	c=1 d=0.878095 t=41
+qu yu 	區域	c=1 d=0.856415 t=41
+shang 	上	c=1 d=0.839457 t=41
+shen du 	深度	c=3 d=2.69309 t=41
+shen me 	什麼	c=1 d=0.99005 t=41
+shi jie 	師姐	c=1 d=0.826959 t=41
+shu ru fa 	輸入法	c=1 d=1 t=41
+si ye cao 	四葉草	c=1 d=0.995012 t=41
+te shu 	特殊	c=1 d=0.995012 t=41
+wo 	我	c=1 d=0.913931 t=41
+xiang ying 	相應	c=1 d=0.951229 t=41
+ye 	也	c=1 d=0.955997 t=41
+yin wei 	因爲	c=1 d=0.909373 t=41
+ying xiang 	影響	c=1 d=0.891366 t=41
+zhe zhong 	這種	c=1 d=0.873716 t=41
