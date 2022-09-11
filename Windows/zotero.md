@@ -1,6 +1,9 @@
 # zotero使用教程
 
 
+## better bibtex设置
+citation key设置：
+`auth.lower + year + shorttitle(1,0).lower`
 
 
 ----
