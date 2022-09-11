@@ -1,0 +1,6 @@
+# Rime user dictionary
+#@/db_name	flypyzc.userdb
+#@/db_type	userdb
+#@/rime_version	1.5.3
+#@/tick	0
+#@/user_id	08739937-06a1-48ea-b483-a1d82a4c18b3
