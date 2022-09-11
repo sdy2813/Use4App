@@ -1,5 +1,11 @@
 # zotero使用教程
 
+## 插件地址
+1. [zotero-better-bibtex](https://github.com/retorquere/zotero-better-bibtex/releases)
+2. [zotfile](https://github.com/jlegewie/zotfile/releases/)
+3. [jasminum](https://github.com/l0o0/jasminum/releaseshttps://github.com/l0o0/jasminum/releases)
+4. [zotero-scihub](https://github.com/ethanwillis/zotero-scihub/releases)
+5. [ zotero-shortdoi](https://github.com/bwiernik/zotero-shortdoi/releases)
 
 ## better bibtex设置
 citation key设置：
