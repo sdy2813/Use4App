@@ -124,3 +124,5 @@ ffmpeg \
 1. [学习ffmpeg，整理资料编写技术手册](https://github.com/feixiao/ffmpeg)
 
 1. [Creating a video from a single image for a specific duration in ffmpeg](https://stackoverflow.com/questions/25891342/creating-a-video-from-a-single-image-for-a-specific-duration-in-ffmpeg)
+
+1. [How to use FFmpeg to convert images to video](https://shotstack.io/learn/use-ffmpeg-to-convert-images-to-video/)
