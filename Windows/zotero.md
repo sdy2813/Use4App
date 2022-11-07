@@ -6,6 +6,7 @@
 3. [jasminum](https://github.com/l0o0/jasminum/releaseshttps://github.com/l0o0/jasminum/releases)
 4. [zotero-scihub](https://github.com/ethanwillis/zotero-scihub/releases)
 5. [ zotero-shortdoi](https://github.com/bwiernik/zotero-shortdoi/releases)
+6. [zotero-pdf-translate](https://github.com/windingwind/zotero-pdf-translate/releases)
 
 ## better bibtex设置
 citation key设置：
