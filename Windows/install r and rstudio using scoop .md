@@ -136,6 +136,28 @@ scoop install rstudio
 scoop update r
 ```
 
+## other appliaction
+```powershell
+scoop install trafficmonitor
+scoop search typora
+scoop install vim
+scoop install exa
+scoop install yt-dlp
+scoop install ffmpeg
+scoop install sudo
+scoop install mambaforge
+scoop install fd
+scoop install duf
+scoop install grep
+scoop install sed
+scoop install gawk
+scoop install scoop-search
+scoop install zotero
+scoop install scoop-completion
+```
+ 
+ 
+ 
 ## Reference
 
 1. [Scoop](https://scoop.sh/)
