@@ -154,6 +154,12 @@ scoop install gawk
 scoop install scoop-search
 scoop install zotero
 scoop install scoop-completion
+scoop install gdu
+scoop install tabby
+scoop install windterm
+scoop install vcxsrv
+scoop install rime-weasel
+scoop install clash-verge
 ```
  
  
