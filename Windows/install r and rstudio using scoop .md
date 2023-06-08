@@ -169,3 +169,4 @@ scoop install clash-verge
 1. [Scoop](https://scoop.sh/)
 2. [scoop-apps](https://github.com/kkzzhizhou/scoop-apps)
 3. [Scoop Extras](https://github.com/ScoopInstaller/Extras)
+4. [使用 scoop 安装管理 windows 软件（2）：github 加速 ](https://shenbo.github.io/2021/03/23/apps/%E4%BD%BF%E7%94%A8scoop%E5%AE%89%E8%A3%85%E7%AE%A1%E7%90%86windows%E8%BD%AF%E4%BB%B6(2)-github%E5%8A%A0%E9%80%9F/)
